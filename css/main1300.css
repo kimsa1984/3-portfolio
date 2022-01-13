@@ -1,0 +1,6 @@
+@charset "utf-8";
+@media(min-width: 1300px){
+    * {margin: 0; padding: 0;}
+    li,ol,ul {list-style: none;}
+    body {background-color: cornflowerblue;}
+}
