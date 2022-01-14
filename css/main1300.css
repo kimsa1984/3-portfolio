@@ -11,60 +11,67 @@
   
 header {
     width: 100%;
-    height: 300px;
+    height: 200px;
     background-color: goldenrod;
 }
 header .container{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-flow: row wrap;
 }
 #toplogo {
-    width: 100px;
-    height: 200px;
+    width: 600px;
+    height: 100px;
     background-color: green;
 }
 #toplogo img {
-    
     height: 70px;
-    
-   
 }
-/* .menuwrap {
-    width: 100%;
-    height: 70px;
+#menu1 {
+    width: 50%;
+    height: 100%;
     
-} */
-nav {
-    width: 100%;
-    height: 50px;
     background-color: gold;
 }
-header .ul {
-    width: 600px;
-    height: 50px;
-        
-    background-color: tomato;
+#menu1 #main_menu{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
 }
-header .nav li {
+#menu1 > ul > li {
+    float: center;
     padding: 0.2%;
+    line-height: 50px;  
+    text-align: center;
+    color: #333; 
+    background-color: rgb(219, 111, 92);
+    cursor: pointer; 
     
 }
-header .nav li:nth-of-type(2n){
+#menu1 > li:nth-of-type(2n){
     background-color: honeydew;
 }
-header .nav li:hover {
+#menu1 > li:hover {
     background-color: red;
     color: yellow;
     cursor: pointer;
 }
-
-/* #main_nav {
-    width: 600px ; 
-    height: 50px;
-    background-color: beige;
-} 
-#main_nav ul li {font-family:'CookieRun-Regular';} */
+#menu1 > ul > li > a{
+    text-decoration: none;
+    color: #333;
+    display: block;
+}
+#menu1 > ul > li > a:hover{
+    background-color: violet;
+    transition: 3s;
+}
+#menu1 > img {
+    width: 100vh;
+}
 
 #slider {
     width: 100%;
