@@ -9,7 +9,10 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main1300.css">
 
-   
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
+
 </head>
 <body>
 
@@ -37,13 +40,23 @@
     </header>
 
     <div id="slider">
-        <ul>
+        <ul id="slide">
             <li><img src="img/main_slide1.jpg" alt=""></li>
             <li><img src="img/main_slide2.jpg" alt=""></li>
             <li><img src="img/main_slide3.jpg" alt=""></li>
             <li><img src="img/main_slide4.jpg" alt=""></li>
         </ul>
     </div>
+    <!-- 메인 슬라이드 
+    <script>
+        function slide(){
+            $('#slide').stop().animate({marginLeft:-1400},function(){
+                $('#slide li:first').appendTo('#slide');
+                $('#slide').css({marginLeft:0});
+            });
+        }
+        setInterval(slide,3500);
+    </script> -->
 
 
     <div id="search">

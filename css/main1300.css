@@ -11,7 +11,7 @@
   
 header {
     width: 100%;
-    height: 200px;
+    height: 120px;
     background-color: goldenrod;
 }
 header .container{
@@ -21,16 +21,20 @@ header .container{
     flex-flow: row wrap;
 }
 #toplogo {
-    width: 600px;
+    width: 500px;
     height: 100px;
     background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 #toplogo img {
-    height: 70px;
-}
+    width: 100%;
+    
+    }
 #menu1 {
-    width: 50%;
-    height: 100%;
+    width: 600px;
+    height: 80px;
     
     background-color: gold;
 }
@@ -44,7 +48,8 @@ header .container{
 }
 #menu1 > ul > li {
     float: center;
-    padding: 0.2%;
+    padding: 0.7%;
+    margin: 1%;
     line-height: 50px;  
     text-align: center;
     color: #333; 
@@ -74,11 +79,19 @@ header .container{
 }
 
 #slider {
-    width: 100%;
+    width: 1400px;
     height: 800px;
-    background-color: blue;
+    margin: 30px auto;
+    position: relative;
+    overflow: hidden;
 }
-#slider img { width: 90%;}
+#slider #slide li {
+    width: 1400px;
+    height: 100%;
+    float: left;
+}
+
+#slide li img { width: 100%; height: 100vh;}
 
 #search {
     width: 100%;
