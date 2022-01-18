@@ -141,8 +141,9 @@ header .container{
     width:27%;
     height: 380px;
     margin-bottom: 70px;
+    overflow: hidden;
 }
-#welcome .container .welcombox  i {font-size: 17px;}
+
 #welcome .container .welcombox button {
     width: 100px; 
     height: 30px; 
@@ -163,31 +164,40 @@ header .container{
 #welcome .container .innertext {
     box-sizing: border-box; 
     /* border: 2px solid;  */
-    width: 450px;
-    height: 120px; 
+    width: 27%;
+    height: 150px; 
     color: #333;
     background-color: #f47736;
     z-index: 3; 
     position: absolute; 
-    bottom: 90px;
+    bottom:100px;
+    padding: 2px;
 }
 #welcome .container .innertext2 {
     box-sizing: border-box; 
     /* border: 2px solid;  */
-    width: 450px;
+    width:27%;
     height: 120px; 
     color: #333;
     background-color: #6cdf68;
     z-index: 3; 
     position: absolute; 
-    bottom: 90px;
+    bottom: 110px;
 }
-#welcome .container h5 {font-size: 19px; padding: 1%; margin: 1%;}
+#welcome .container h5 {
+    font-size: 19px; 
+    padding: 1%; 
+    margin: 1%;
+    text-align: center;
+}
 #welcome .container .welcombox img {
     width: 100%;
 }
 #welcome .container .welcombox img:hover {
     transform: scale(1.08);
+    transition: all 0.35s ease-in-out;
+    opacity: 1; 
+  
 }
 
 
