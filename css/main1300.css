@@ -4,7 +4,7 @@
         width: 1300px;
         height: 100%;
         margin: 0 auto;
-        padding: 5px;
+        padding: 0 15px 0 15px;
         border: 1px solid orangered;
        
 }  
@@ -81,8 +81,8 @@ header .container{
 }
 #sub1 {display: none;}
 #icon {
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
     position: relative;
     top: 0%;
     left: -8%;
@@ -93,7 +93,7 @@ header .container{
 #icon img{
     width: 100%;
     height: 100%;
-    margin-right: 15px;
+    margin-right: 8px;
 }
 #icon img:hover {background-color: black; cursor: pointer;}
 
@@ -127,7 +127,7 @@ header .container{
     flex-wrap: wrap;
 }
 /* #welcome .container .text {width: 100%; } */
-#welcome .container h1 {
+#welcome h1 {
     width: 100%;
     font-size: 45px; 
     text-align: center; 
@@ -135,8 +135,6 @@ header .container{
     position: absolute;
     top:45px;
 }
-#welcome span {text-align: center;  transform: rotate(-4deg);}
-
 #welcome .container .welcombox {
     width:27%;
     height: 380px;
@@ -199,12 +197,96 @@ header .container{
     opacity: 1; 
   
 }
-
-
-#popular1,#popular2 {
+#popular1{
     width: 100%;
     height: 500px;
     background-color:rgb(201, 148, 148) ;
+}
+#popular1 .container {
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+#popular1 .container img {
+    background-image: url(img/pop1.jpg);
+    background-size: cover;
+    background-position: center center;
+    width:100%;
+    display: table-cell;
+    vertical-align: top;
+}
+#popular1 .container .poptext {
+    width: 50%;
+    height: 100%;
+    display: table-cell;
+    flex-direction: column;
+    vertical-align: middle;
+    padding: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color:#008484 ;
+    color: #fff;
+}
+#popular2{
+    width: 100%;
+    height: 920px;
+    text-align: center;
+    background-color:rgb(201, 148, 148) ;
+}
+#popular2 .container {
+    display: flex;
+    flex-flow: row wrap;
+
+}
+#popular2 .container .popbox {
+    width: 40%;
+    height: 95%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#popular2 .container img {width: 100%; border-radius: 50%; }
+#popular2 .container .popbox h1 {
+    font-size: 45px; 
+    color: #36ad47; 
+    padding: 10px;}
+
+#popular2 .container .popbox  .pop2 {
+    font-size: 1.05rem; 
+    padding: 15px; 
+    color: #666; 
+    text-align: start;
+}
+#popular2 .container .popbox span {
+    box-sizing: border-box;
+    background-color: #36ad47 ;
+    color: #fff;
+    font-family: sans-serif;
+    padding: 10px;
+    cursor: pointer;
+}
+#popular2 .container .popbox1 {
+    width: 33%;
+    height: 70%;
+    background-color: #36ad47;
+    margin-left: 1%;
+    margin-right: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#popular2 .container .popbox1 li {line-height: 30px;}
+/* #popular2 .container .popbox1 .imgbox{
+    width: 100%; 
+    height: 200px;
+} */
+#popular2 .container .popbox1 img {width:50%;}
+#popular2 .container .popbox1 i {font-size: 20px;}
+#popular2 .container .popbox2 {
+    width: 30%;
+    height: 50%;
 }
 #newsletter {
     width: 100%;
@@ -219,17 +301,26 @@ header .container{
 #guide {
     width: 100%;
     height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-between;
     background-color: pink;
 }
 #guide .guidebox {
-    width: 22%;
+    width: 100%;
     height: 100%;
-    background-color: darkslateblue;
+   
 }
 #bodyslide {
     width: 100%;
     height: 600px;
 }
-#bodyslide img {width: 100%;}
+#bodyslide .container .bottombox img {
+    background-image: url(img/2vi5s9ttnl_Julie_Larsen_Maher_9757_Snow_Leopard_Khyber_HIM_BZ_01_25_19.jpg);
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+}
 
 }
