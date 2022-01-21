@@ -1,10 +1,10 @@
 @media(min-width: 1300px){
 
 .container {
-        width: 1400px;
+        width: 1300px;
         height: 100%;
         margin: 0 auto;
-        padding: 0 15px 0 15px;
+        
         border: 1px solid orangered;
        
 }  
@@ -123,7 +123,7 @@ header .container{
     height: 100%;
     display: flex;
     position: relative;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
 }
@@ -174,14 +174,13 @@ header .container{
 }
 #welcome .container .innertext2 {
     box-sizing: border-box; 
-    /* border: 2px solid;  */
     width:27%;
     height: 120px; 
     color: #333;
     background-color: #6cdf68;
     z-index: 3; 
     position: absolute; 
-    bottom: 110px;
+    bottom: 120px;
 }
 #welcome .container h5 {
     font-size: 19px; 
@@ -201,20 +200,28 @@ header .container{
 #popular1{
     width: 100%;
     height: 500px;
+    display: table;
     background-color:rgb(201, 148, 148) ;
 }
 #popular1 .container {
-    width: 100%;
     height: 100%;
     display: table;
+}
+#popular1 .container .popimg {
+   
+    width: 50%;
+    height: 100%;
+    display: table-cell;
+   
 }
 #popular1 .container img {
     background-image: url(img/pop1.jpg);
     background-size: cover;
-    background-position: center center;
-    width:100%;
+    background-position: center;
+    width: 100%;
+    height: 100%;
     display: table-cell;
-    vertical-align: top;
+   
 }
 #popular1 .container .poptext {
     width: 50%;
@@ -222,12 +229,35 @@ header .container{
     display: table-cell;
     flex-direction: column;
     vertical-align: middle;
-    padding: 50px;
     padding-left: 30px;
     padding-right: 30px;
     background-color:#008484 ;
     color: #fff;
 }
+#popular1 .container .poptext .pop1 {
+    font-family: sans-serif; 
+    font-size: 15px; 
+    font-weight: bold;
+    line-height: 1;
+}
+#popular1 .container .poptext h1 {
+    line-height: 3;
+    font-family: sans-serif; 
+    font-size: 40px; 
+    font-weight: bold; 
+}
+#popular1 .container .poptext p {
+    line-height: 2;
+    font-family: sans-serif; 
+    font-size: 18px; 
+    font-weight: bold; 
+}  
+#popular1 .container .poptext button {
+    width: 100px;
+    font-family: sans-serif; 
+    background-color: #f47736;
+    
+} 
 #popular2{
     width: 100%;
     height: 920px;
@@ -235,9 +265,10 @@ header .container{
     background-color:rgb(201, 148, 148) ;
 }
 #popular2 .container {
+    height: 100%;
+    padding: 0 10px 10px 0px;
     display: flex;
     flex-flow: row wrap;
-
 }
 #popular2 .container .popbox {
     width: 40%;
@@ -246,12 +277,16 @@ header .container{
     align-content: center;
     justify-content: center;
     flex-direction: column;
+    background: dde3e6ff&noise=626262&density=15&opacity=15;
+    
 }
-#popular2 .container img {width: 100%; border-radius: 50%; }
+#popular2 .container img {width: 100%; border-radius: 50%; padding: 10px; }
 #popular2 .container .popbox h1 {
     font-size: 45px; 
     color: #36ad47; 
-    padding: 10px;}
+    font-family: sans-serif;
+    padding: 10px;
+}
 
 #popular2 .container .popbox  .pop2 {
     font-size: 1.05rem; 
@@ -259,6 +294,7 @@ header .container{
     color: #666; 
     text-align: start;
 }
+
 #popular2 .container .popbox span {
     box-sizing: border-box;
     background-color: #36ad47 ;
@@ -268,26 +304,105 @@ header .container{
     cursor: pointer;
 }
 #popular2 .container .popbox1 {
-    width: 33%;
-    height: 70%;
+    width: 30%;
+    height: 55%;
     background-color: #36ad47;
-    margin-left: 1%;
-    margin-right: 1%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items:center;
+    flex-flow: row wrap;
+    padding:24px;
 }
-#popular2 .container .popbox1 li {line-height: 50px;}
-/* #popular2 .container .popbox1 .imgbox{
+#popular2 .container .popbox1 .imgbox{
+    width: 100%;
+}
+#popular2 .container .popbox1 .imgbox img{
+    width: 33%;
+}
+#popular2 .container .popbox1 ul {
+    padding-left: 24px;  
+    padding-right: 24px;
+    width: 100%;
+    margin: 0;
+}
+#popular2 .container .popbox1 li {
+    line-height: 2;
+    text-align: left; 
+    letter-spacing: 5px;
+}
+#popular2 .container .popbox1 .popline {
+    border: none;
+    border-bottom: 1px solid;
+    display: block;
+    height: 0;
+    padding-bottom: 15px;
+    color: #fff;
+    opacity: 0.5;
+    width: 100%;
+    margin: 0 0 auto;
+}
+#popular2 .container .popbox1 .map {
     width: 100%; 
-    height: 200px;
-} */
-#popular2 .container .popbox1 img {width:50%;}
-#popular2 .container .popbox1 i {font-size: 20px;}
+    display: flex;
+    justify-content: flex-start;
+    
+    padding:24px;
+}
+#popular2 .container .popbox1 img {width:25%;  }
+#popular2 .container .popbox1 .map h3 {
+    font-size: 25px; 
+    color: #fff; 
+    font-family: sans-serif;
+    width:100%;
+}
+#popular2 .container .popbox1 .maptext {
+    width: 100%; 
+   
+}
+#popular2 .container .popbox1 .maptext1 {
+    width: 100%; 
+    
+   
+}
+#popular2 .container .popbox1 h1 {
+    font-size: 15px; 
+    color: #fff; 
+    font-family: sans-serif;
+    text-align: left;
+}
+
+#popular2 .container .popbox1 h3 {
+    font-size: 25px; 
+    color: #fff; 
+    font-family: sans-serif;
+    width: 84%;
+}
+#popular2 .container .popbox1 .maptext2 {
+    width: 100%; 
+    display: flex;
+    letter-spacing: 5px;
+}
+#popular2 .container .popbox1 span {
+    box-sizing: border-box;
+    border-radius: 55%;
+    background-color: gold;
+    color: #36ad47;
+    padding: 1% ;
+    letter-spacing: 5px;
+    
+}
 #popular2 .container .popbox2 {
-    width: 20%;
-    height: 70%;
+    width: 30%;
+    height: 55%;
+    background-color: azure;
+    background-image: url(/assets/textures/paper-3f02c7aa6efbd73b13cd7543a94c6d7d.png);
+}
+#popular2 .container .popbox3 {
+    width: 50%;
+    height: 55%;
+    background-color: rgb(64, 201, 201);
+    display: flex;
+    box-sizing: border-box;
 }
 #newsletter {
     width: 100%;
@@ -317,10 +432,11 @@ header .container{
     width: 100%;
     height: 600px;
 }
+#bodyslide .container .bottombox { width:100% ; height: 500px;}
 #bodyslide .container .bottombox img {
-    background-image: url(img/2vi5s9ttnl_Julie_Larsen_Maher_9757_Snow_Leopard_Khyber_HIM_BZ_01_25_19.jpg);
+    /* background-image: url(img/2vi5s9ttnl_Julie_Larsen_Maher_9757_Snow_Leopard_Khyber_HIM_BZ_01_25_19.jpg);
     background-position: center center;
-    background-size: cover;
+    background-size: cover; */
     width: 100%;
 }
 
