@@ -344,8 +344,7 @@ header .container{
 #popular2 .container .popbox1 .map {
     width: 100%; 
     display: flex;
-    justify-content: flex-start;
-    
+    flex-wrap: wrap;
     padding:24px;
 }
 #popular2 .container .popbox1 img {width:25%;  }
@@ -357,11 +356,11 @@ header .container{
 }
 #popular2 .container .popbox1 .maptext {
     width: 100%; 
-   
+    display: flex;
 }
 #popular2 .container .popbox1 .maptext1 {
     width: 100%; 
-    
+    letter-spacing: 5px;
    
 }
 #popular2 .container .popbox1 h1 {
@@ -396,6 +395,15 @@ header .container{
     height: 55%;
     background-color: azure;
     background-image: url(/assets/textures/paper-3f02c7aa6efbd73b13cd7543a94c6d7d.png);
+}
+#popular2 .container .popbox2 span {
+    box-sizing: border-box;
+    border-radius: 55%;
+    background-color: gold;
+    color: #36ad47;
+    padding: 1% ;
+    letter-spacing: 5px;
+    
 }
 #popular2 .container .popbox3 {
     width: 50%;
