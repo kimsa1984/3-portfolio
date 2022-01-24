@@ -98,19 +98,20 @@ header .container{
 #icon img:hover {background-color: black; cursor: pointer;}
 
 #slider {
-    width: 1400px;
+    width: 4800px;
     height: 800px;
     margin: 30px auto;
-    position: relative;
+    position: relative; 
     overflow: hidden;
 }
 #slider #slide li {
     width: 1400px;
     height: 100%;
     float: left;
+    
 }
 
-#slide li img { width: 100%; height: 100vh;}
+#slide li img {  height: 100vh;}
 
 #welcome {
     width: 100%;
@@ -244,17 +245,30 @@ header .container{
     font-weight: bold; 
 }
 #popular1 .container .poptext p {
-    line-height: 2;
+    line-height: 2.5;
     font-family: sans-serif; 
     font-size: 18px; 
     font-weight: bold; 
+    padding-bottom: 10px;
+   
 }  
 #popular1 .container .poptext button {
     width: 100px;
-    font-family: sans-serif; 
+    height: 25px; 
     background-color: #f47736;
-    
+    font-family: "돋움";
+    background-color: yellow;
+    border-radius: 5px;
+    border: none;
+    margin: 0 15px 0 15px;
 } 
+#popular1 .container .poptext button:hover{
+    background-color: red;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+}
 #popular2{
     width: 100%;
     height: 920px;
@@ -417,16 +431,43 @@ header .container{
     background-image:url(https://c532f75abb9c1c021b8c-e46e473f8aadb72cf2a8ea564b4e6a76.ssl.cf5.rackcdn.com/2020/04/09/8ofw0gdfer_Julie_Larsen_Maher_9617_Visitors_with_Children_CZ_BZ_11_01_18.jpg);
     background-size: cover;
 }
-#newsletter {
+#news {
     width: 100%;
-    height: 500px;
+    height: 400px;
+    
     background-color: darkorange;
+}
+#news img {
+    width: 100%;
+    height:100%;
+    background-image: url(img/news_bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+   
+}
+#news .container .email {
+    display: flex;
+    margin-left: -15px;
+    margin-right: -15px;
+    justify-content: center;
+    align-items: center;
 }
 #video {
     width: 100%;
     height: 800px;
+    position: relative;
     background-color: darksalmon;
 }
+#video .container .video {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 190px 0;  
+    background-image: url(https://c532f75abb9c1c021b8c-e46e473f8aadb72cf2a8ea564b4e6a76.ssl.cf5.rackcdn.com/2020/04/09/6oa7njmfvz_Julie_Larsen_Maher_0199_Visitors_with_Children_JUN_BZ_11_02_18.jpg);
+
+}
+
 #guide {
     width: 100%;
     height: 400px;
