@@ -406,9 +406,19 @@ header .container{
     width: 30%;
     height: 55%;
     background-color: azure;
-    
-    background-image: url(/assets/textures/paper-3f02c7aa6efbd73b13cd7543a94c6d7d.png);
+
 }
+#popular2 .container .popbox2 table {
+    width: 100%;
+    margin: 0 auto;
+    text-align: left;
+    border-color: gray;
+    border-collapse: collapse;
+    border-spacing: 0;
+
+}
+.hide-visually {display: none;}
+
 #popular2 .container .popbox2 span {
     box-sizing: border-box;
     border-radius: 55%;
