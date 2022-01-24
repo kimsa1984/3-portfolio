@@ -115,8 +115,6 @@ header .container{
 #welcome {
     width: 100%;
     height:750px;
-    
-    background-color:burlywood;
 }
 #welcome .container {
     
@@ -201,7 +199,6 @@ header .container{
     width: 100%;
     height: 500px;
     display: table;
-    background-color:rgb(201, 148, 148) ;
 }
 #popular1 .container {
     height: 100%;
@@ -262,13 +259,14 @@ header .container{
     width: 100%;
     height: 920px;
     text-align: center;
-    background-color:rgb(201, 148, 148) ;
+    
 }
 #popular2 .container {
     height: 100%;
     padding: 0 10px 10px 0px;
     display: flex;
     flex-flow: row wrap;
+    position: relative;
 }
 #popular2 .container .popbox {
     width: 40%;
@@ -277,7 +275,7 @@ header .container{
     align-content: center;
     justify-content: center;
     flex-direction: column;
-    background: dde3e6ff&noise=626262&density=15&opacity=15;
+   
     
 }
 #popular2 .container img {width: 100%; border-radius: 50%; padding: 10px; }
@@ -394,6 +392,7 @@ header .container{
     width: 30%;
     height: 55%;
     background-color: azure;
+    
     background-image: url(/assets/textures/paper-3f02c7aa6efbd73b13cd7543a94c6d7d.png);
 }
 #popular2 .container .popbox2 span {
@@ -406,11 +405,17 @@ header .container{
     
 }
 #popular2 .container .popbox3 {
-    width: 50%;
-    height: 55%;
+    width: 59%;
+    height: 45%;
     background-color: rgb(64, 201, 201);
     display: flex;
     box-sizing: border-box;
+    position: absolute;
+    top: 55%;
+    left: 40%;
+    padding: 5px;
+    background-image:url(https://c532f75abb9c1c021b8c-e46e473f8aadb72cf2a8ea564b4e6a76.ssl.cf5.rackcdn.com/2020/04/09/8ofw0gdfer_Julie_Larsen_Maher_9617_Visitors_with_Children_CZ_BZ_11_01_18.jpg);
+    background-size: cover;
 }
 #newsletter {
     width: 100%;
