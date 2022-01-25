@@ -4,7 +4,6 @@
         width: 1300px;
         height: 100%;
         margin: 0 auto;
-        
         border: 1px solid orangered;
        
 }  
@@ -12,8 +11,9 @@
 header {
     width: 100%;
     height: 120px;
-    background-color: goldenrod;
     padding:5px;
+    background-color: #cd4e38;
+    /* color: #fff; */
 }
 header .container{
     display: flex;
@@ -24,7 +24,6 @@ header .container{
 #toplogo {
     width: 400px;
     height: 100px;
-    background-color: green;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,7 +37,6 @@ header .container{
     width: 600px;
     height: 80px;
     
-    background-color: gold;
 }
 #menu1 #main_menu{
     width: 100%;
@@ -47,6 +45,7 @@ header .container{
     justify-content: flex-end;
     align-items: center;
     position: relative;
+   
 }
 #menu1 > ul > li {
     float: center;
@@ -54,8 +53,8 @@ header .container{
     margin: 1%;
     line-height: 50px;  
     text-align: center;
-    color: #333; 
-    background-color: rgb(219, 111, 92);
+    color: #fff; 
+   
     cursor: pointer; 
     
 }
@@ -69,12 +68,15 @@ header .container{
 }
 #menu1 > ul > li > a{
     text-decoration: none;
-    color: #333;
+    color: #fff;
     display: block;
 }
 #menu1 > ul > li > a:hover{
-    background-color: violet;
-    transition: 3s;
+    background-color: #333;
+    transition: 1s;
+    border-top: 1px solid ;
+    border-bottom: 1px solid ;
+   
 }
 #menu1 > img {
     width: 100vh;
@@ -95,7 +97,12 @@ header .container{
     height: 100%;
     margin-right: 8px;
 }
-#icon img:hover {background-color: black; cursor: pointer;}
+#icon img:hover {
+    background-color:#333; 
+    cursor: pointer;
+    transition: all 1s;
+    transform: scale(1.2);
+}
 
 #slider {
     width: 4800px;
@@ -213,7 +220,7 @@ header .container{
    
 }
 #popular1 .container img {
-    background-image: url(img/pop1.jpg);
+    background-image: url(../img/pop1.jpg);
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -289,7 +296,7 @@ header .container{
     align-content: center;
     justify-content: center;
     flex-direction: column;
-   
+    background-image: url(../img/waves_bg.jpg);
     
 }
 #popular2 .container img {width: 100%; border-radius: 50%; padding: 10px; }
@@ -313,6 +320,9 @@ header .container{
     color: #fff;
     font-family: sans-serif;
     padding: 10px;
+    cursor: pointer;
+}
+#popular2 .container .popbox span:hover {
     cursor: pointer;
 }
 #popular2 .container .popbox1 {
@@ -405,19 +415,48 @@ header .container{
 #popular2 .container .popbox2 {
     width: 30%;
     height: 55%;
+    padding: 24px;
+    background-image: url(../img/paper_bg.png);
     background-color: azure;
-
+}
+#popular2 .container .popbox2 .book h1 {
+    color: #85754e;
+    font-size: 15px;
+    font-weight: bold;
 }
 #popular2 .container .popbox2 table {
     width: 100%;
     margin: 0 auto;
-    text-align: left;
+    text-align: center;
     border-color: gray;
     border-collapse: collapse;
     border-spacing: 0;
 
 }
+#popular2 .container .popbox2 table th {
+    width: 80px;
+    height: 60px;
+    line-height: 50px;
+    border-bottom: 1px solid #666;
+    vertical-align: bottom ;
+    font-size: 16px;
+    color: #85754e;
+    font-weight: normal;
+}
+#popular2 .container .popbox2 table th:nth-of-type(2n){
+    color: #333;
+    font-weight: normal;
+   text-align: left;
+}
+#popular2 .container .popbox2 table th a:hover{
+    color: #009d9e;
+}
 .hide-visually {display: none;}
+#popular2 .container .popbox2 .maptext1 {
+    padding: 20px;
+    letter-spacing: 5px;
+    color:#36ad47;
+}    
 
 #popular2 .container .popbox2 span {
     box-sizing: border-box;
@@ -425,9 +464,13 @@ header .container{
     background-color: gold;
     color: #36ad47;
     padding: 1% ;
-    letter-spacing: 5px;
+    margin-right: 5px;
     
 }
+#popular2 .container .popbox2 a:hover{
+    color:#009d9e;
+    opacity: 0.7;
+}    
 #popular2 .container .popbox3 {
     width: 59%;
     height: 45%;
@@ -441,13 +484,64 @@ header .container{
     background-image:url(https://c532f75abb9c1c021b8c-e46e473f8aadb72cf2a8ea564b4e6a76.ssl.cf5.rackcdn.com/2020/04/09/8ofw0gdfer_Julie_Larsen_Maher_9617_Visitors_with_Children_CZ_BZ_11_01_18.jpg);
     background-size: cover;
 }
+#zootext {
+    width: 100%; 
+    height: 350px;
+    left: 0;
+    position: relative;
+    
+    /*z-index: 2; */
+    background-color: #009d9e;
+    
+}
+#zootext .textpad {
+    width: 100%;
+    padding: 5%;
+    line-height: 35px;
+}
+#zootext .textpad h4 {
+    font-size: 1.25rem;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: none;
+    color: #fff;
+    font-weight: 400;
+}
+#zootext .textpad p { 
+    text-align: center; 
+    color: #fff;
+    font-size: 18px;
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+#zootext .textpad img {
+    width: 80px;
+    height: 50px;
+    margin: -15px 0 0 ;
+}
+#zootext .textpad span {
+    width: 300px;
+    height: 30px;
+    background-color: #f47736;
+    color: #fff;
+    border-radius: 4px;
+    padding: 5px 20px;
+    transition: 0.2s;
+    
+}
+#zootext .textpad span:hover {
+    transform: scale(1.08);
+    cursor: pointer;
+    opacity: 0.9;
+}
 #news {
     width: 100%;
-    height: 400px;
-    
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
     background-color: darkorange;
 }
-#news img {
+#news img{
     width: 100%;
     height:100%;
     background-image: url(img/news_bg.jpg);
@@ -463,19 +557,45 @@ header .container{
     justify-content: center;
     align-items: center;
 }
+
 #video {
     width: 100%;
     height: 800px;
     position: relative;
-    background-color: darksalmon;
+    /* background-color:#1B71B2; */
 }
-#video .container .video {
-    background-repeat: no-repeat;
+
+#video .btn {display: flex;}
+#video .btn img {
+    background-repeat:no-repeat;
     background-position: center center;
     background-size: cover;
-    padding: 190px 0;  
-    background-image: url(https://c532f75abb9c1c021b8c-e46e473f8aadb72cf2a8ea564b4e6a76.ssl.cf5.rackcdn.com/2020/04/09/6oa7njmfvz_Julie_Larsen_Maher_0199_Visitors_with_Children_JUN_BZ_11_02_18.jpg);
-
+    padding: 90px 0;  
+    background-image: url(img/video.jpg); 
+    width: 100%;
+    /* width: 1200px;
+    height: 675px; */
+}
+#video .btn1{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 3;
+}
+#video .btn1 img{ width: 80%;}
+#video .container .close {
+    display: block;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    cursor: pointer;
+    position: absolute;
+    top: 3%;
+    right: 3%;
+    font-size: 30px;
+    color: red;
 }
 
 #guide {
@@ -489,7 +609,6 @@ header .container{
 }
 #guide .guidebox {
     width: 100%;
-    height: 100%;
    
 }
 #bodyslide {
@@ -502,6 +621,7 @@ header .container{
     background-position: center center;
     background-size: cover; */
     width: 100%;
+    display: none;
 }
 
 }
