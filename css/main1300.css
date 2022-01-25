@@ -105,20 +105,26 @@ header .container{
 }
 
 #slider {
-    width: 4800px;
+    width: 100%;
     height: 800px;
-    margin: 30px auto;
     position: relative; 
     overflow: hidden;
 }
-#slider #slide li {
-    width: 1400px;
-    height: 100%;
-    float: left;
-    
+#slider ul {
+    width: 400vw;
 }
+#slider #slide li {
+    width: 100vw;
+    height: 800px;
+    float: left;
+    position: relative;
+}
+/* #slider #slide li img {width: 100%; height: 100%;} */
 
-#slide li img {  height: 100vh;}
+#slider #slide li:first-child {background:url(../img/main_slide1.jpg) center/cover no-repeat; }
+#slider #slide li:nth-child(2) {background:url(../img/main_slide2.jpg) center/cover no-repeat; }
+#slider #slide li:nth-child(3) {background:url(../img/main_slide3.jpg) center/cover no-repeat; }
+#slider #slide li:last-child {background:url(../img/main_slide4.jpg) center/cover no-repeat; }
 
 #welcome {
     width: 100%;
@@ -746,17 +752,6 @@ header .container{
     transform: scale(1.12);
     opacity: 0.7;
 } 
-#bodyslide {
-    width: 100%;
-    height: 600px;
-}
-#bodyslide .container .bottombox { width:100% ; height: 500px;}
-#bodyslide .container .bottombox img {
-    /* background-image: url(img/2vi5s9ttnl_Julie_Larsen_Maher_9757_Snow_Leopard_Khyber_HIM_BZ_01_25_19.jpg);
-    background-position: center center;
-    background-size: cover; */
-    width: 100%;
-    display: none;
-}
+#
 
 }

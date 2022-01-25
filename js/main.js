@@ -1,11 +1,13 @@
 // 메인 슬라이드
+        var w=window.innerWidth;
+
         function slide(){
-            $('#slide').stop().animate({marginLeft:-1400},function(){
+            $('#slide').stop().animate({marginLeft:-w},function(){
                 $('#slide li:first').appendTo('#slide');
                 $('#slide').css({marginLeft:0});
             });
         }
-        setInterval(slide,3500);
+        setInterval(slide,3000);
 
 // popup iframe
         $(".click").click(function(){
