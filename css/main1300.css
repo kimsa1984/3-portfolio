@@ -833,10 +833,16 @@ footer .container .bottom a img{
     height: 40px;
 }
 footer .container .bottom .footnav1{
-    display: block;
+   
     padding: 8px;
     color: #008484;
 
+}
+
+footer .copyright {
+    width: 100%;
+    height: 50px;
+    padding: 20px;
 }
 footer .copyright .footbox {
     width: 100%;
