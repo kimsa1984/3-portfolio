@@ -543,7 +543,6 @@ header .container{
 #news {
     width: 100%;
     height: 300px;
-    margin-top: 50px;
     display: flex;
     justify-content: space-between;
     position: relative;
@@ -613,7 +612,7 @@ header .container{
 }
 #video {
     width: 100%;
-    height: 1200px;
+    height: 1130px;
     position: relative;
     /* background-color:#1B71B2; */
 }
@@ -621,8 +620,7 @@ header .container{
     background-repeat:no-repeat;
     background-position: center center;
     background-size: cover;
-    padding: 90px 0;  
-    background-image: url(img/video.jpg); 
+    background-image:none; 
     width: 100%;
     /* width: 1200px;
     height: 675px; */
@@ -693,6 +691,7 @@ header .container{
     font-size: 50px;
 }
 #guide .container {
+    height: auto;
     display: flex;
     justify-content: space-between;
     
@@ -752,6 +751,40 @@ header .container{
     transform: scale(1.12);
     opacity: 0.7;
 } 
-#
+footer {
+    width: 100%;
+    height: 100%;
+    padding: 18px;
+    vertical-align: middle;
+    background-color: #212426 ;
+    color:#ae9f86;
+   
+}
+footer #footer_nav {
+    width: 100%;
+    height: 80px;
+    letter-spacing: 0.2em;
+    line-height: 1.2;
+    color:#ae9f86;
+    font-family: sans-serif;
+    
 
+}
+footer #footer_nav ul {
+    width: 100%;
+    padding: 8px;
+    margin:10px 10px ;
+    text-align: center;
+    text-transform: uppercase;
+}    
+#footer_nav ul li {
+    display: inline-block;
+    padding: 15px;
+    line-height: 50px;
+ 
+}
+footer .container {
+    width: 100%;
+    height: 100%;
+}
 }
