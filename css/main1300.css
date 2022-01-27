@@ -775,7 +775,7 @@ footer .footer_top ul {
     
 }    
 footer .footer_top ul li {
-    float: left;
+    display: inline-block;
     padding: 15px;
     margin-left: 2%;
 }
@@ -797,7 +797,7 @@ footer .foot_hr {
     color: #015b5b;
     box-sizing: content-box;
     position: absolute;
-    top:10%;
+    top:12%;
     left: 50%;
 }
 footer .container {
@@ -879,7 +879,6 @@ footer .container .copyright .footbox {
     font-size: 12px;
     color:  #706c65;
     font-family: sans-serif;
-   
 }
 footer .container .copyright .footbox p {
     width: 100%;
