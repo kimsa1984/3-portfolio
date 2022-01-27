@@ -1,24 +1,641 @@
-@media(min-width:600px) and (max-width:1299px){
+@media(min-width: 600px) and (max-width:1299px){
+    #slider {
+        width: 100%;
+        height: 800px;
+        position: relative; 
+        overflow: hidden;
+    }
+    #slider ul {
+        width: 400vw;
+    }
+    #slider #slide li {
+        width: 100vw;
+        height: 800px;
+        float: left;
+        position: relative;
+    }
     
-#wrap {
-    width: 100%;
-    height: auto;
-    background-color: goldenrod;
-}
-.container {
-    width: 1140px;
-    height: 100%;
-    margin: 0 auto;
-    padding: 5px;
-    border: 1px solid orangered;
-}
-#topbar {
-    width: 100%;
-    height: 800px ;
-
-}
-#main_nav {
-    width:100% ;
-}
-
-}
+    #welcome {
+        width: 100%;
+        height:750px;
+    }
+    #welcome .container {
+        
+        height: 100%;
+        display: flex;
+        position: relative;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    #welcome .container .h1 {
+        width: 100%; }
+    #welcome .container h1 {
+        width: 100%;
+        font-size: 50px; 
+        text-align: center; 
+        line-height: 50px; 
+        position: absolute;
+        top:40px;
+    }
+    #welcome .container .welcombox {
+        width:27%;
+        height: 500px;
+        margin-bottom: 30px;
+        overflow: hidden;
+    }
+    
+    #welcome .container .welcombox button {
+        width: 100px; 
+        height: 25px; 
+        font-family: "돋움";
+        background-color: yellow;
+        border-radius: 5px;
+        border: none;
+        margin: 0 15px 0 15px;
+    }
+    #welcome .container .welcombox button:hover {
+        background-color: red;
+        color: #fff;
+        cursor: pointer;
+        border: none;
+        font-weight: bold;
+    }
+    #welcome .container .innertext {
+        box-sizing: border-box; 
+        width: 27%;
+        height: 150px; 
+        color: #333;
+        background-color: #f47736;
+        z-index: 3; 
+        position: absolute; 
+        bottom:170px;
+        padding: 2px;
+    }
+    #welcome .container .innertext2 {
+        box-sizing: border-box; 
+        width:27%;
+        height: 150px; 
+        color: #333;
+        background-color: #6cdf68;
+        z-index: 3; 
+        position: absolute; 
+        bottom: 160px;
+    }
+    #welcome .container h5 {
+        font-size: 19px; 
+        padding: 1%; 
+        margin: 1%;
+        text-align: center;
+    }
+    #welcome .container .welcombox img {
+        width: 100%;
+    }
+    #welcome .container .welcombox img:hover {
+        transform: scale(1.08);
+        transition: all 0.35s ease-in-out;
+        opacity: 1; 
+      
+    }
+    #popular1{
+        width: 100%;
+        height: 500px;
+        display: table;
+    }
+    #popular1 .container {
+        height: 100%;
+        display: table;
+    }
+    #popular1 .container .popimg {
+       
+        width: 50%;
+        height: 100%;
+        display: table-cell;
+       
+    }
+    #popular1 .container img {
+        background-image: url(../img/pop1.jpg);
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 100%;
+        display: table-cell;
+       
+    }
+    #popular1 .container .poptext {
+        width: 50%;
+        height: 100%;
+        display: table-cell;
+        flex-direction: column;
+        vertical-align: middle;
+        padding-left: 30px;
+        padding-right: 30px;
+        background-color:#008484 ;
+        color: #fff;
+    }
+    #popular1 .container .poptext .pop1 {
+        font-family: sans-serif; 
+        font-size: 15px; 
+        font-weight: bold;
+        line-height: 1;
+    }
+    #popular1 .container .poptext h1 {
+        line-height: 3;
+        font-family: sans-serif; 
+        font-size: 40px; 
+        font-weight: bold; 
+    }
+    #popular1 .container .poptext p {
+        line-height: 2.5;
+        font-family: sans-serif; 
+        font-size: 18px; 
+        font-weight: bold; 
+        padding-bottom: 10px;
+       
+    }  
+    #popular1 .container .poptext button {
+        width: 100px;
+        height: 25px; 
+        background-color: #f47736;
+        font-family: "돋움";
+        background-color: yellow;
+        border-radius: 5px;
+        border: none;
+        margin: 0 15px 0 15px;
+    } 
+    #popular1 .container .poptext button:hover{
+        background-color: red;
+        color: #fff;
+        cursor: pointer;
+        border: none;
+        font-weight: bold;
+    }
+    #popular2{
+        width: 100%;
+        height: 920px;
+        text-align: center;
+        
+    }
+    #popular2 .container {
+        /* height: auto;
+        padding: 0 0 5px; */
+        display: flex;
+        flex-flow: row wrap;
+        position: relative;
+    }
+    #popular2 .container .popbox {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        flex-direction: column;
+        background-image: url(../img/waves_bg.jpg);
+        
+    }
+    #popular2 .container .zoo img {width: 100%;  padding: 10px; border-radius: 50%; }
+    #popular2 .container .popbox h1 {
+        font-size: 30px; 
+        color: #36ad47; 
+        font-family: sans-serif;
+        padding: 10px;
+        margin-bottom: 30px;
+    }
+    
+    #popular2 .container .popbox  .pop2 {
+        font-size: 1.05rem; 
+        padding: 15px; 
+        color: #666; 
+        text-align: start;
+    }
+    
+    #popular2 .container .popbox span {
+        box-sizing: border-box;
+        background-color: #36ad47 ;
+        color: #fff;
+        font-family: sans-serif;
+        padding: 10px;
+        cursor: pointer;
+    }
+    #popular2 .container .popbox span:hover {
+        cursor: pointer;
+    }
+    #popular2 .container .popbox1 {
+        width: 25%;
+        height: 55%;
+        background-color: #36ad47;
+        display: flex;
+        justify-content: flex-start;
+        align-items:center;
+        flex-flow: row wrap;
+        padding:24px;
+    }
+    #popular2 .container .popbox1 .imgbox{
+        width: 100%;
+    }
+    #popular2 .container .popbox1 .imgbox img{
+        width: 33%;
+    }
+    #popular2 .container .popbox1 ul {
+        padding-left: 10px;  
+        width: 100%;
+        margin: 0;
+    }
+    #popular2 .container .popbox1 li {
+        line-height: 2;
+        text-align: left; 
+        letter-spacing: 2px;
+    }
+    #popular2 .container .popbox1 .popline {
+        border: none;
+        border-bottom: 1px solid;
+        display: block;
+        height: 0;
+        padding-bottom: 15px;
+        color: #fff;
+        opacity: 0.5;
+        width: 100%;
+        margin: 0 0 auto;
+    }
+    #popular2 .container .popbox1 .map {
+        width: 100%; 
+        display: flex;
+        flex-wrap: wrap;
+        padding:24px;
+    }
+    #popular2 .container .popbox1 img {width:40%;  }
+    #popular2 .container .popbox1 .map h3 {
+        font-size: 25px; 
+        color: #fff; 
+        font-family: sans-serif;
+        width:100%;
+    }
+    #popular2 .container .popbox1 .maptext {
+        width: 100%; 
+        display: flex;
+    }
+    #popular2 .container .popbox1 .maptext1 {
+        width: 90%; 
+        letter-spacing: 2px;
+       
+    }
+    #popular2 .container .popbox1 h1 {
+        font-size: 15px; 
+        color: #fff; 
+        font-family: sans-serif;
+        text-align: left;
+    }
+    
+    #popular2 .container .popbox1 h3 {
+        font-size: 20px; 
+        color: #fff; 
+        font-family: sans-serif;
+        width: 80%;
+    }
+    #popular2 .container .popbox1 .maptext2 {
+        width: 100%; 
+        display: flex;
+        letter-spacing: 2px;
+    }
+    #popular2 .container .popbox1 span {
+        box-sizing: border-box;
+        border-radius: 55%;
+        background-color: gold;
+        color: #36ad47;
+        padding: 1% ;
+        letter-spacing: 5px;
+        
+    }
+    #popular2 .container .popbox2 {
+        width: 25%;
+        height: 55%;
+        padding: 24px;
+        background-image: url(../img/paper_bg.png);
+       
+    }
+    #popular2 .container .popbox2 .book h1 {
+        color: #85754e;
+        font-size: 15px;
+        font-weight: bold;
+    }
+    #popular2 .container .popbox2 table {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        border-color: gray;
+        border-collapse: collapse;
+        border-spacing: 0;
+    
+    }
+    #popular2 .container .popbox2 table th {
+        width: 65px;
+        height: 50px;
+        line-height: 35px;
+        border-bottom: 1px solid #666;
+        vertical-align: bottom ;
+        font-size: 15px;
+        color: #85754e;
+        font-weight: normal;
+    }
+    #popular2 .container .popbox2 table th:nth-of-type(2n){
+        color: #333;
+        font-weight: normal;
+       text-align: left;
+    }
+    #popular2 .container .popbox2 table th a:hover{
+        color: #009d9e;
+    }
+    .hide-visually {display: none;}
+    #popular2 .container .popbox2 .maptext1 {
+        padding: 15px;
+        margin-top: 20px;
+        letter-spacing: 2px;
+        color:#36ad47;
+    }    
+    
+    #popular2 .container .popbox2 span {
+        box-sizing: border-box;
+        border-radius: 55%;
+        background-color: gold;
+        color: #36ad47;
+        padding: 1% ;
+        margin-right: 5px;
+        
+    }
+    #popular2 .container .popbox2 a:hover{
+        color:#009d9e;
+        opacity: 0.7;
+    }    
+    #popular2 .container .popbox3 .zoo {
+        width:50%;
+        height: 46%;
+        box-sizing: border-box;
+        position: absolute;
+        top: 54%;
+        left: 50%;
+        display: flex;
+        background: url(../img/zoo1.jpg) center/cover no-repeat;
+        padding: 5px;
+        overflow: hidden;
+    }
+    #zootext {
+        width: 100%; 
+        height: 350px;
+        left: 0;
+        position: relative;
+        
+        /*z-index: 2; */
+        background-color: #009d9e;
+        
+    }
+    #zootext .textpad {
+        width: 100%;
+        padding: 5%;
+        line-height: 35px;
+    }
+    #zootext .textpad h4 {
+        font-size: 1.25rem;
+        letter-spacing: 2px;
+        text-align: center;
+        text-transform: none;
+        color: #fff;
+        font-weight: 400;
+    }
+    #zootext .textpad p { 
+        text-align: center; 
+        color: #fff;
+        font-size: 18px;
+        margin-top: 15px;
+        margin-bottom: 0;
+    }
+    #zootext .textpad img {
+        width: 80px;
+        height: 50px;
+        margin: -15px 0 0 ;
+    }
+    #zootext .textpad span {
+        width: 300px;
+        height: 30px;
+        background-color: #f47736;
+        color: #fff;
+        border-radius: 4px;
+        padding: 5px 20px;
+        transition: 0.2s;
+        
+    }
+    #zootext .textpad span:hover {
+        transform: scale(1.08);
+        cursor: pointer;
+        opacity: 0.9;
+    }
+    #news {
+        width: 100%;
+        height: 300px;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        overflow: hidden;
+        background-color: darkorange;
+    }
+    #news img{
+        width: 35vw;
+        height:50vh;
+       
+        /* background-image: url(img/news_bg.jpg);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat; */
+       
+    }
+    #news .container .email {
+        display: flex;
+        margin-left: 3px;
+        margin-right: -13px;
+        justify-content: center;
+        align-items: center;
+        /* position: absolute;
+        top: -50%;
+        left: 30%; */
+        flex-flow: row wrap;
+        z-index: 5;
+       
+    }
+    #news .container .email .item h4 {
+        font-size: 20px;
+        color: #fff;
+        font-weight: 400;
+        height: 50px;
+        width: 95%;
+    }
+    #news .container .email .item p {
+        font-size: 17px;
+        color: #fff;
+        font-weight: normal;
+        width: 90%;
+    }
+    #news .container .email .item2 {
+        width: 100%;
+        height: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    #news .container .email .item2 input {
+        width: 80%;
+        font-size: 15px;
+        padding: 2px;
+        border: none;
+    }
+    #news .container .email .item2 span {
+        width: 50%;
+        height: 40px;
+        box-sizing: border;
+        background-color: red;
+        text-align: center;
+        margin-top: 15px;
+        padding: 5px;
+        color: #fff;
+    }
+    #news .container .email .item2 span:hover {
+        background-color:#009d9e;
+        cursor: pointer;
+    }
+    #video {
+        width: 100%;
+        position: relative;
+    }
+    #video .btn img {
+        background-repeat:no-repeat;
+        background-position: center center;
+        background-size: cover;
+        background-image:none; 
+        width: 100%;
+    }
+    #video .btn1{
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        top: 25%;
+        left: 45%;
+        z-index: 3;
+    }
+    #btn {
+        width: 150px;
+        height: 150px;
+        background: none;
+        border: none;
+    }
+    #video .btn1 img{ width: 80%;}
+    #video .container .close {
+        display:none;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        cursor: pointer;
+        position: absolute;
+        top: 3%;
+        right: 3%;
+        font-size: 30px;
+        color: red;
+    }
+    #video .container .popup{
+        width: 100%;
+        height: 750px;
+        background-color: honeydew;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+        line-height: 200px;
+        border: 1px solid red;
+        display: none;
+    } 
+    
+    #video .container .closebtn {
+        width: 50px;
+        height: 30px;
+        line-height: 30px;
+        position: absolute;
+        bottom: 40px;
+        right: 50px;
+        display: block;
+        border: 1px solid;
+        color: #333;
+        text-decoration: none;
+    
+    }
+    #guide {
+        width: 100%;
+        height:900px;
+        background: url(../img/waves_bg.jpg);
+        background-color:#f7f8f8;
+        
+    }
+    #guide h1 {
+        color: #36AD47;
+        font-size: 50px;
+    }
+    #guide .container {
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    #guide .container .guidebox {
+        width: 48%;
+        height: 90%;
+        background-color:#f7f8f8;
+        box-sizing: border-box;
+        box-shadow: 0 1px 2px rgb(0 0 0 / 25%);
+        margin:0 0 5px;
+        padding: 20px;
+    }
+    #guide .container >.guidebox > figure {
+        width: 100%;
+        height: 65%;
+        line-height: 2;
+        position: relative;
+        overflow: hidden;
+    }
+    #guide .container .guidebox img{
+        width: 100%;
+        height: 100%;
+        padding: 0 1px;
+    }
+    #guide .container .guidebox h3 {
+        color: #85754e;
+        font-weight: bold;
+        padding-top: 15px;
+    }
+    #guide .container .guidebox h4 {
+        color: #36AD47;
+        font-weight: bold;
+        line-height: 2;
+        font-size: 30px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+    #guide .container .guidebox p {
+        color: #333;
+        font-family: sans-serif;
+        line-height: 2;
+        text-align: center;
+        font-size: 18px;
+    }
+    #guide .container .guidebox button {
+        width: 200px;
+        height: 35px;
+        border: none;
+        background-color: darkorange;
+        margin-top: 20px;
+        color: #fff;
+        cursor: pointer;
+    }
+    #guide .container .guidebox button:hover {
+        transition:all ease-in-out 1s;
+        transform: scale(1.12);
+        opacity: 0.7;
+    } 
+    
+    }
