@@ -78,7 +78,13 @@
     #menu1 > img {
         width: 100vh;
     }
-    #sub1 {display: none;}
+    #sub1 { width: 100%;
+            background-color: #ddd;
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 100px;
+    }
     #icon {
         width: 25px;
         height: 25px;
