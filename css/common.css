@@ -287,7 +287,7 @@ flex-flow: row wrap;
 
 #toplogo #ham {width: 100%;  display: inline-block;}
 
-#toplogo #ham i{font-size: 50px; height: 40px;}
+header #ham i{font-size: 30px; height: 40px;}
 #menu1 {
     width: 50%;
     height: 80px;
@@ -510,8 +510,9 @@ footer .container .copyright .footbox span{
         flex-flow: row wrap;
       
     }
+
     #toplogo {
-        width: 25%;
+        width: 19%;
         height: 100px;
         display: flex;
         justify-content: flex-start;
@@ -519,9 +520,9 @@ footer .container .copyright .footbox span{
     }
     #toplogo img {width: 100%; }
 
-    #toplogo #ham {display: none;}        
+    header #ham {display: none;}        
     #menu1 {
-        width:55%;
+        width:65%;
         height: 80px;
         
     }
@@ -543,7 +544,6 @@ footer .container .copyright .footbox span{
         color: #fff; 
         cursor: pointer; 
         font-size: 15px;
-        
     }
     #menu1 > li:nth-of-type(2n){
         background-color: honeydew;
