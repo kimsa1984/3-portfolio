@@ -17,32 +17,31 @@
     
     #welcome {
         width: 100%;
-        height:750px;
+        
     }
     #welcome .container {
         
         height: 100%;
         display: flex;
         position: relative;
-        justify-content: space-evenly;
+        flex-direction: column;
         align-items: center;
-        flex-wrap: wrap;
+        
     }
     #welcome .container .h1 {
         width: 100%; }
     #welcome .container h1 {
         width: 100%;
-        font-size: 50px; 
+        font-size: 35px; 
         text-align: center; 
         line-height: 50px; 
-        position: absolute;
-        top:40px;
+        
     }
     #welcome .container .welcombox {
-        width:27%;
-        height: 500px;
-        margin-bottom: 30px;
-        overflow: hidden;
+        width:100%;
+        height:auto;
+        
+      
     }
     
     #welcome .container .welcombox button {
@@ -53,6 +52,7 @@
         border-radius: 5px;
         border: none;
         margin: 0 15px 0 15px;
+        display: none;
     }
     #welcome .container .welcombox button:hover {
         background-color: red;
@@ -64,33 +64,33 @@
     #welcome .container .innertext {
         box-sizing: border-box; 
         /* border: 2px solid;  */
-        width: 27%;
-        height: 150px; 
+        width: 100%;
+        height: 100px; 
         color: #333;
         background-color: #f47736;
         z-index: 3; 
-        position: absolute; 
-        bottom:100px;
-        padding: 2px;
+        font-size: 15px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
     }
     #welcome .container .innertext2 {
         box-sizing: border-box; 
-        width:27%;
-        height: 120px; 
+        width:100%;
+        height: 80px; 
         color: #333;
         background-color: #6cdf68;
         z-index: 3; 
-        position: absolute; 
-        bottom: 120px;
+        
     }
     #welcome .container h5 {
-        font-size: 19px; 
+        font-size: 17px; 
         padding: 1%; 
         margin: 1%;
         text-align: center;
     }
     #welcome .container .welcombox img {
-        width: 100%;
+        width: 95%;
     }
     #welcome .container .welcombox img:hover {
         transform: scale(1.08);
@@ -100,8 +100,10 @@
     }
     #popular1{
         width: 100%;
-        height: 500px;
-        display: table;
+        height: 400px;
+        display: flex;
+        flex-flow: column wrap;
+        position: relative;
     }
     #popular1 .container {
         height: 100%;
@@ -111,7 +113,7 @@
        
         width: 50%;
         height: 100%;
-        display: table-cell;
+        display: none;
        
     }
     #popular1 .container img {
@@ -187,7 +189,7 @@
     #popular2 .container .popbox {
         width: 40%;
         height: 100%;
-        display: flex;
+        display: none;
         align-content: center;
         justify-content: center;
         flex-direction: column;
@@ -224,7 +226,7 @@
         width: 30%;
         height: 55%;
         background-color: #36ad47;
-        display: flex;
+        display: none;
         justify-content: flex-start;
         align-items:center;
         flex-flow: row wrap;
@@ -308,7 +310,7 @@
         
     }
     #popular2 .container .popbox2 {
-        width: 30%;
+        width: 100%;
         height: 55%;
         padding: 24px;
         background-image: url(../img/paper_bg.png);
@@ -367,14 +369,14 @@
         opacity: 0.7;
     }    
     #popular2 .container .popbox3 {
-        width: 60%;
+        width: 100%;
         height: 46%;
         background-color: rgb(64, 201, 201);
         display: flex;
         box-sizing: border-box;
         position: absolute;
         top: 54%;
-        left: 40%;
+        left: 0%;
         padding: 5px;
         background-image:url(https://c532f75abb9c1c021b8c-e46e473f8aadb72cf2a8ea564b4e6a76.ssl.cf5.rackcdn.com/2020/04/09/8ofw0gdfer_Julie_Larsen_Maher_9617_Visitors_with_Children_CZ_BZ_11_01_18.jpg);
         background-size: cover;
@@ -432,7 +434,7 @@
     #news {
         width: 100%;
         height: 300px;
-        display: flex;
+        display: none;
         justify-content: space-between;
         position: relative;
         overflow: hidden;
@@ -501,7 +503,7 @@
     }
     #video {
         width: 100%;
-        height: 1130px;
+        height: auto;
         position: relative;
         /* background-color:#1B71B2; */
     }
@@ -515,11 +517,11 @@
         height: 675px; */
     }
     #video .btn1{
-        width: 200px;
-        height: 200px;
+        width: 25%;
+        height: 25%;
         position: absolute;
         top: 30%;
-        left: 50%;
+        left: 35%;
         z-index: 3;
     }
     #btn {
@@ -570,7 +572,7 @@
     }
     #guide {
         width: 100%;
-        height: 800px;
+        height: auto;
         background: url(../img/waves_bg.jpg);
         background-color:#f7f8f8;
         
@@ -586,7 +588,7 @@
         
     }
     #guide .container .guidebox {
-        width: 48%;
+        width: 100%;
         height: 90%;
         background-color:#f7f8f8;
         box-sizing: border-box;
@@ -651,7 +653,7 @@
     }
     footer .footer_top {
         width: 100%;
-        height: 90px;
+        height: auto;
         letter-spacing: 0.2em;
         line-height: 1.2;
         text-transform: uppercase;
@@ -692,7 +694,7 @@
         color: #015b5b;
         box-sizing: content-box;
         position: absolute;
-        top:12%;
+        top:22%;
         left: 50%;
     }
     footer .container {
@@ -712,8 +714,8 @@
     footer .container .bottom a{
         border: 1px solid ;
         letter-spacing: 0.05rem;
-        margin: 8px;
-        min-width: 120px;
+        margin: 6px;
+        min-width: 100px;
         padding: 16px 16px 8px;
         display: inline-block;
         border-radius: 6px;
@@ -724,11 +726,12 @@
     }   
     footer .container .bottom p{
         width: 100px;
-        text-align:center;
+        text-align: left;
         display: block;
-        padding: 8px;
+        padding: 5px;
         color: #ae9f86;
         font-family: sans-serif;
+        font-size: 13px;
     }
     footer .container .bottom a img{
         width: 40px;
