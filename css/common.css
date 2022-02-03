@@ -543,7 +543,7 @@ footer .container .copyright .footbox span{
         text-align: center;
         color: #fff; 
         cursor: pointer; 
-        font-size: 15px;
+        font-size: 14px;
     }
     #menu1 > li:nth-of-type(2n){
         background-color: honeydew;
