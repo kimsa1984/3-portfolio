@@ -1,7 +1,7 @@
 @media(min-width: 600px) and (max-width:1299px){
     #slider {
         width: 100%;
-        height: 800px;
+        height: 500px;
         position: relative; 
         overflow: hidden;
     }
@@ -10,14 +10,14 @@
     }
     #slider #slide li {
         width: 100vw;
-        height: 800px;
+        height:500px;
         float: left;
         position: relative;
     }
     
     #welcome {
         width: 100%;
-        height: 2000px;
+        height: 700px;
     }
     #welcome .container {
         
@@ -38,8 +38,8 @@
         
     }
     #welcome .container .welcombox {
-        width:100%;
-        height: 700px;
+        width:25%;
+        height: 95%;
         overflow: hidden;
     }
     
@@ -51,6 +51,7 @@
         border-radius: 5px;
         border: none;
         margin: 0 15px 0 15px;
+        display: flex;
     }
     #welcome .container .welcombox button:hover {
         background-color: red;
@@ -61,29 +62,29 @@
     }
     #welcome .container .innertext {
         box-sizing: border-box; 
-        width: 27%;
-        height: 150px; 
+        width: 25%;
+        height: 130px; 
         color: #333;
         background-color: #f47736;
         z-index: 3; 
         position: absolute; 
-        bottom:170px;
+        
         padding: 2px;
-        display: none;
+        
     }
     #welcome .container .innertext2 {
         box-sizing: border-box; 
-        width:27%;
-        height: 150px; 
+        width:25%;
+        height: 130px; 
         color: #333;
         background-color: #6cdf68;
         z-index: 3; 
         position: absolute; 
-        bottom: 160px;
-        display: none;
+        
+        
     }
     #welcome .container h5 {
-        font-size: 19px; 
+        font-size: 15px; 
         padding: 1%; 
         margin: 1%;
         text-align: center;
@@ -99,19 +100,19 @@
     }
     #popular1{
         width: 100%;
-        height: 500px;
-        display: table;
+        height: 750px;
+        display: flex;
     }
     #popular1 .container {
         height: 100%;
-        display: table;
+        display:flex;
+        flex-direction: column;
     }
     #popular1 .container .popimg {
-       
-        width: 50%;
+        width: 100%;
         height: 100%;
-        display: table-cell;
        
+        
     }
     #popular1 .container img {
         background-image: url(../img/pop1.jpg);
@@ -119,13 +120,13 @@
         background-position: center;
         width: 100%;
         height: 100%;
-        display: table-cell;
+        display: flex;
        
     }
     #popular1 .container .poptext {
-        width: 50%;
+        width: 100%;
         height: 100%;
-        display: table-cell;
+        display: flex;
         flex-direction: column;
         vertical-align: middle;
         padding-left: 30px;
@@ -172,7 +173,7 @@
     }
     #popular2{
         width: 100%;
-        height: 920px;
+        height: 1200px;
         text-align: center;
         
     }
@@ -186,7 +187,7 @@
     #popular2 .container .popbox {
         width: 50%;
         height: 100%;
-        display: flex;
+        display: none;
         align-content: center;
         justify-content: center;
         flex-direction: column;
@@ -224,7 +225,7 @@
         width: 25%;
         height: 55%;
         background-color: #36ad47;
-        display: flex;
+        display: none;
         justify-content: flex-start;
         align-items:center;
         flex-flow: row wrap;
@@ -307,10 +308,11 @@
         
     }
     #popular2 .container .popbox2 {
-        width: 25%;
-        height: 55%;
+        width: 100%;
+        height: 100%;
         padding: 24px;
         background-image: url(../img/paper_bg.png);
+        margin-top: 170px;
        
     }
     #popular2 .container .popbox2 .book h1 {
@@ -367,12 +369,12 @@
         opacity: 0.7;
     }    
     #popular2 .container .popbox3 .zoo {
-        width:50%;
+        width:100%;
         height: 46%;
         box-sizing: border-box;
         position: absolute;
         top: 54%;
-        left: 50%;
+        left: 0;
         display: flex;
         background: url(../img/zoo1.jpg) center/cover no-repeat;
         padding: 5px;
@@ -430,15 +432,16 @@
     }
     #news {
         width: 100%;
-        height: 300px;
+       
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         position: relative;
+        flex-direction: column;
         overflow: hidden;
         background-color: darkorange;
     }
     #news img{
-        width: 35vw;
+        width: 100vw;
         height:50vh;
        
         /* background-image: url(img/news_bg.jpg);
@@ -453,9 +456,7 @@
         margin-right: -13px;
         justify-content: center;
         align-items: center;
-        /* position: absolute;
-        top: -50%;
-        left: 30%; */
+        height: 300px;
         flex-flow: row wrap;
         z-index: 5;
        
@@ -475,7 +476,7 @@
     }
     #news .container .email .item2 {
         width: 100%;
-        height: 50px;
+       
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
@@ -512,11 +513,11 @@
         width: 100%;
     }
     #video .btn1{
-        width: 200px;
-        height: 200px;
+        width: 150px;
+        height:150px;
         position: absolute;
-        top: 25%;
-        left: 45%;
+        top: 30%;
+        left: 38%;
         z-index: 3;
     }
     #btn {
@@ -567,7 +568,7 @@
     }
     #guide {
         width: 100%;
-        height:900px;
+        height:auto;
         background: url(../img/waves_bg.jpg);
         background-color:#f7f8f8;
         
@@ -583,7 +584,7 @@
         
     }
     #guide .container .guidebox {
-        width: 48%;
+        width: 100%;
         height: 90%;
         background-color:#f7f8f8;
         box-sizing: border-box;

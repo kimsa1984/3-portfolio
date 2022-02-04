@@ -45,7 +45,7 @@
       overflow: hidden;
   }
   
-  #welcome .container .welcombox button {
+  /* #welcome .container .welcombox .innertext button {
       width: 100px; 
       height: 25px; 
       font-family: "돋움";
@@ -54,13 +54,13 @@
       border: none;
       margin: 0 15px 0 15px;
   }
-  #welcome .container .welcombox button:hover {
+  #welcome .container .welcombox .innertext button:hover {
       background-color: red;
       color: #fff;
       cursor: pointer;
       border: none;
       font-weight: bold;
-  }
+  } */
   #welcome .container .innertext {
       box-sizing: border-box; 
       /* border: 2px solid;  */
@@ -89,6 +89,7 @@
       margin: 1%;
       text-align: center;
   }
+  
   #welcome .container .welcombox img {
       width: 100%;
   }
@@ -473,20 +474,20 @@
       font-weight: normal;
   }
   #news .container .email .item2 {
-      width: 500px;
+      width: 485px;
       height: 50px;
       display: flex;
      
       justify-content: space-around;
   }
   #news .container .email .item2 input {
-      width: 100%;
+      width: 55%;
       font-size: 17px;
       padding: 5px;
       border: none;
   }
   #news .container .email .item2 span {
-      width: 35%;
+      width: 28%;
       height: 50px;
       box-sizing: border;
       background-color: red;
@@ -501,7 +502,7 @@
   }
   #video {
       width: 100%;
-      height: 1130px;
+      height: auto;
       position: relative;
       /* background-color:#1B71B2; */
   }
@@ -519,7 +520,7 @@
       height: 200px;
       position: absolute;
       top: 30%;
-      left: 50%;
+      left: 45%;
       z-index: 3;
   }
   #btn {
@@ -640,151 +641,5 @@
       transform: scale(1.12);
       opacity: 0.7;
   } 
-  footer {
-      width: 100%;
-      height: 100%;
-      padding: 18px;
-      vertical-align: middle;
-      background-color: #212426 ;
-      color: #ae9f86;
-      position: relative;
-  }
-  footer .footer_top {
-      width: 100%;
-      height: 90px;
-      letter-spacing: 0.2em;
-      line-height: 1.2;
-      text-transform: uppercase;
-     
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-  }
-  footer .footer_top ul {
-      width: 100%;
-      padding: 8px;
-      margin:10px 10px ;
-      
-      text-align: center;
-      
-  }    
-  footer .footer_top ul li {
-      display: inline-block;
-      padding: 15px;
-      margin-left: 2%;
-  }
-  footer .footer_top ul li a{
-      color:#ae9f86;
-      font-family: sans-serif;
-      font-size: 15px;
-      font-weight: 100;
-  }    
-  footer .footer_top ul li a:hover{
-      cursor: pointer;
-      border-bottom: 2px solid #ae9f86;
-  }
-  footer .foot_hr {
-      width: 30px;
-      height: 0;
-      display: block;
-      border-bottom: 1px solid;
-      color: #015b5b;
-      box-sizing: content-box;
-      position: absolute;
-      top:12%;
-      left: 50%;
-  }
-  footer .container {
-      width: 100%;
-      height: auto;
-  }
-  footer .container .bottom{
-      width: 100%;
-      height: 185px;
-      text-transform: uppercase;
-      display: flex;
-      justify-content: center;
-      padding: 20px;
-      color:#ae9f86;
-      
-  }
-  footer .container .bottom a{
-      border: 1px solid ;
-      letter-spacing: 0.05rem;
-      margin: 8px;
-      min-width: 120px;
-      padding: 16px 16px 8px;
-      display: inline-block;
-      border-radius: 6px;
-      background-color: #212426;
-  } 
-  footer .container .bottom a:hover{
-      color: #009d9e ;
-  }   
-  footer .container .bottom p{
-      width: 100px;
-      text-align:center;
-      display: block;
-      padding: 8px;
-      color: #ae9f86;
-      font-family: sans-serif;
-  }
-  footer .container .bottom a img{
-      width: 40px;
-      height: 40px;
-  }
-  footer .container .footnav1 {
-      width: 100%;
-      height: 150px;
-      margin: 10px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-  }    
-  footer .container .footnav1 ul {
-      float: left;
-      padding: 1%;
-      margin: 1%;
-      line-height: 30px;  
-      text-align: center;
-      cursor: pointer; 
-  }
-  footer .container .footnav1 ul li {padding: 0.5%; float: left;}
-  footer .container .footnav1 ul li a {
-      color: #008484;
-      font-family: sans-serif;
-      font-size: 15px;
-      font-weight: normal;
-      margin: 10px;
-      padding: 5px 0 5px;
-  }
-  footer .container .footnav1 ul li a:hover {border-bottom: 1px solid #008484;}
   
-  footer .container .copyright {
-      width: 100%;
-      height: 200px;
-      padding: 20px;
-  }
-  footer .container .copyright .footbox {
-      width: 100%;
-      height: 30px;
-      padding:10px;
-      font-size: 12px;
-      color:  #706c65;
-      font-family: sans-serif;
-  }
-  footer .container .copyright .footbox p {
-      width: 100%;
-      font-family: sans-serif;
-      text-align: center;
-      color:  #706c65;
-      line-height: 50px;
-  
-  }    
-  footer .container .copyright .footbox span{
-      color: #008484;
-      font-family: sans-serif;
-  }  
   }

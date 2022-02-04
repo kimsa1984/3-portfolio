@@ -22,4 +22,21 @@
             $(".closebtn").hide();
            
         });
+
+//menu bar 
+        // $(function(){
+        //     $('.main_menu>li').click(function(){
+        //         $('.sub').stop().slideUp();
+        //         $('this').find('.sub').stop().slideToggle('fast');
+
+        //     });
+        // });
         
+        $(function(){
+            $('.menu1').click(function(){
+                $('.sub').slideToggle();
+            });
+            $("#toplogo").mouseleave(function(){
+                $('.sub').hide();
+            });
+        });

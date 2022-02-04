@@ -41,8 +41,7 @@
   #welcome .container .welcombox {
       width:27%;
       height: 500px;
-      margin-bottom: 30px;
-      overflow: hidden;
+           overflow: hidden;
   }
   
   #welcome .container .welcombox button {
