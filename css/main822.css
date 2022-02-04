@@ -14,35 +14,9 @@
       float: left;
       position: relative;
   }
-  
-  #welcome {
-      width: 100%;
-      height:750px;
-  }
-  #welcome .container {
-      
-      height: 100%;
-      display: flex;
-      position: relative;
-      justify-content: space-evenly;
-      align-items: center;
-      flex-wrap: wrap;
-  }
+ 
   #welcome .container .h1 {
       width: 100%; }
-  #welcome .container h1 {
-      width: 100%;
-      font-size: 50px; 
-      text-align: center; 
-      line-height: 50px; 
-      position: absolute;
-      top:40px;
-  }
-  #welcome .container .welcombox {
-      width:27%;
-      height: 500px;
-           overflow: hidden;
-  }
   
   #welcome .container .welcombox button {
       width: 100px; 
@@ -60,27 +34,7 @@
       border: none;
       font-weight: bold;
   }
-  #welcome .container .innertext {
-      box-sizing: border-box; 
-      width: 27%;
-      height: 150px; 
-      color: #333;
-      background-color: #f47736;
-      z-index: 3; 
-      position: absolute; 
-      bottom:170px;
-      padding: 2px;
-  }
-  #welcome .container .innertext2 {
-      box-sizing: border-box; 
-      width:27%;
-      height: 150px; 
-      color: #333;
-      background-color: #6cdf68;
-      z-index: 3; 
-      position: absolute; 
-      bottom: 160px;
-  }
+  
   #welcome .container h5 {
       font-size: 19px; 
       padding: 1%; 
@@ -96,11 +50,7 @@
       opacity: 1; 
     
   }
-  #popular1{
-      width: 100%;
-      height: 500px;
-      display: table;
-  }
+  
   #popular1 .container {
       height: 100%;
       display: table;
@@ -428,22 +378,9 @@
       opacity: 0.9;
   }
   #news {
-      width: 100%;
-      height: 300px;
-      display: flex;
-      justify-content: space-between;
-      position: relative;
-      overflow: hidden;
-      background-color: darkorange;
+     
   }
   #news img{
-      width: 35vw;
-      height:50vh;
-     
-      /* background-image: url(img/news_bg.jpg);
-      background-size: cover;
-      background-position: center center;
-      background-repeat: no-repeat; */
      
   }
   #news .container .email {

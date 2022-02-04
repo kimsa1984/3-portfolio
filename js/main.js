@@ -28,16 +28,9 @@
         
         $(function(){
             $("#header_btn").mouseover(function(){
-                $('.sub').slideDown();
+                $(this).children('.sub').stop().slideDown();
             }).mouseout(function(){
-                $('.sub').slideUp();
+                $('.sub').stop().slideUp();
             });
 
         });    
-
-            $(window).resize(function(){
-                if(window.innerWidth<=822){
-                    $('.sub').show();
-                }
-            });
-      
