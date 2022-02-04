@@ -129,6 +129,7 @@
         height: 100%;
         display: flex;
         flex-direction: column;
+        justify-content: center;
         vertical-align: middle;
         padding-left: 30px;
         padding-right: 30px;
@@ -184,6 +185,7 @@
         display: flex;
         flex-flow: row wrap;
         position: relative;
+        order: 2;
     }
     #popular2 .container .popbox {
         width: 50%;
@@ -435,19 +437,14 @@
         display: flex;
         justify-content: center;
         position: relative;
-        flex-direction: column;
+        flex-flow: row wrap;
         overflow: hidden;
         background-color: darkorange;
     }
     #news img{
-        width: 100vw;
+        width: 50%;
         height:50vh;
-       
-        /* background-image: url(img/news_bg.jpg);
-        background-size: cover;
-        background-position: center center;
-        background-repeat: no-repeat; */
-       
+        order: 1;
     }
     #news .container .email {
         display: flex;

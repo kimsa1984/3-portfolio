@@ -34,3 +34,11 @@
             });
 
         });    
+//햄버거 메뉴
+
+        $(function(){
+            $("#ham").click(function(){
+                $("#main_menu").stop().slideUp();
+                $(this).find('.sub').stop().slideToggle();
+            });
+        });
