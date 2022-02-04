@@ -24,19 +24,20 @@
         });
 
 //menu bar 
-        // $(function(){
-        //     $('.main_menu>li').click(function(){
-        //         $('.sub').stop().slideUp();
-        //         $('this').find('.sub').stop().slideToggle('fast');
-
-        //     });
-        // });
+       
         
         $(function(){
-            $('.menu1').click(function(){
-                $('.sub').slideToggle();
+            $("#header_btn").mouseover(function(){
+                $('.sub').slideDown();
+            }).mouseout(function(){
+                $('.sub').slideUp();
             });
-            $("#toplogo").mouseleave(function(){
-                $('.sub').hide();
+
+        });    
+
+            $(window).resize(function(){
+                if(window.innerWidth<=822){
+                    $('.sub').show();
+                }
             });
-        });
+      
